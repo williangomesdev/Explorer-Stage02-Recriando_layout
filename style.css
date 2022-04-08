@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+
+:root {
+  --background: #2c2b3d;
+  --white: #ffffff;
+  --green: #00bfa6;
+  --gray: #c2c2c2;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background) ;
+}
+
+
