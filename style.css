@@ -4,6 +4,8 @@
   box-sizing: border-box;
   border: none;
   text-decoration: none;
+  list-style: none;
+  font-family: "JetBrains Mono", monospace;
 }
 
 :root {
@@ -15,7 +17,105 @@
 
 body {
   min-height: 100vh;
-  background: var(--background) ;
+  background: var(--background);
+  text-align: center;
+  margin: auto 93px auto 99px;
 }
 
 
+header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 1078px;
+  margin-top:71px;
+  margin-bottom: 101px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 64px;
+}
+
+header nav ul li a {
+  color: var(--white);
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 157px;
+}
+
+main .mainInfo {
+  width: 683px;
+  padding-top: 6px;
+}
+
+main .mainInfo h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: var(--white);
+  margin-bottom: 59px;
+}
+
+main .mainInfo h1 span {
+  color: var(--green);
+}
+
+main .mainInfo p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--gray);
+  text-align: center;
+}
+
+main .mainInfo p strong,
+main .mainInfo p span {
+  font-weight: 700;
+}
+
+main .mainInfo p span {
+  color: var(--green);
+}
+
+#line {
+  margin: 0 auto;
+  width: 568px;
+  border-top: 1px solid var(--green);
+}
+
+footer {
+  margin: 0 auto;
+  height: 55px;
+  text-align: center;
+}
+
+footer p,
+footer p a {
+  padding-top: 27px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--white);
+}
+
+#padLock {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+}
